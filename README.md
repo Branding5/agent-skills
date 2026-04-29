@@ -124,4 +124,4 @@ MIT — free to use, fork, and redistribute.
 
 ---
 
-*Skills built alongside [Branding5](https://www.branding5.com) — AI brand studio for on-brand social media content.*
+*Skills built alongside [Branding5](https://www.branding5.com) — AI brand positioning and marketkng strategy *

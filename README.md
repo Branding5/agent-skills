@@ -32,7 +32,7 @@ npx skills add Branding5/agent-skills@social-media-image-sizes
 node scripts/check.js image.png
 ```
 
-![check output](./social-media-image-sizes/assets/check-output.png)
+![check output](./skills/social-media-image-sizes/assets/check-output.png)
 
 **Resize to a named spec:**
 
@@ -40,7 +40,7 @@ node scripts/check.js image.png
 node scripts/resize.js image.png "Instagram Profile Photo"
 ```
 
-![resize output](./social-media-image-sizes/assets/resize-output.png)
+![resize output](./skills/social-media-image-sizes/assets/resize-output.png)
 
 **Platforms covered:**
 
@@ -56,7 +56,7 @@ node scripts/resize.js image.png "Instagram Profile Photo"
 | Snapchat    | Snaps, Spotlight, Stories, Ads, Filters/Lenses                           |
 | Threads     | Profile, Posts                                                           |
 
-→ [View skill](./social-media-image-sizes/SKILL.md) · [Full reference](./social-media-image-sizes/AGENTS.md) · [Interactive tool](https://www.branding5.com/tools/social-media-cheat-sheet)
+→ [View skill](./skills/social-media-image-sizes/SKILL.md) · [Full reference](./skills/social-media-image-sizes/AGENTS.md) · [Interactive tool](https://www.branding5.com/tools/social-media-cheat-sheet)
 
 ---
 
@@ -65,12 +65,13 @@ node scripts/resize.js image.png "Instagram Profile Photo"
 Each skill lives in its own directory:
 
 ```
-<skill-name>/
-├── SKILL.md          # Frontmatter + agent instructions
-├── AGENTS.md         # Full compiled reference (single-file context)
-├── scripts/          # Executable tools
-├── references/       # Per-platform detail, loaded on demand
-└── package.json      # Dependencies (if any)
+skills/
+└── <skill-name>/
+    ├── SKILL.md          # Frontmatter + agent instructions
+    ├── AGENTS.md         # Full compiled reference (single-file context)
+    ├── scripts/          # Executable tools
+    ├── references/       # Per-platform detail, loaded on demand
+    └── package.json      # Dependencies (if any)
 ```
 
 ## Installation
@@ -89,7 +90,7 @@ npx skills add Branding5/agent-skills@social-media-image-sizes -g
 
 ## Contributing
 
-Bug reports and pull requests welcome. If a platform updates its specs, open an issue or PR against the relevant file in `social-media-image-sizes/references/` and `scripts/platform-data.js`.
+Bug reports and pull requests welcome. If a platform updates its specs, open an issue or PR against the relevant file in `skills/social-media-image-sizes/references/` and `skills/social-media-image-sizes/scripts/platform-data.js`.
 
 ## License
 

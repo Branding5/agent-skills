@@ -49,7 +49,8 @@ if (!fs.existsSync(imgPath)) {
   process.exit(1);
 }
 
-const fitMode  = args.includes('--fit')   ? args[args.indexOf('--fit') + 1]   : 'cover';
+const fitRaw   = args.includes('--fit')   ? args[args.indexOf('--fit') + 1]   : 'cover';
+const fitMode  = ['cover', 'contain'].includes(fitRaw) ? fitRaw : (() => { console.error(`Invalid --fit value: "${fitRaw}". Use "cover" or "contain".`); process.exit(1); })();
 const bgColor  = args.includes('--bg')    ? args[args.indexOf('--bg') + 1]     : 'ffffff';
 const outArg   = args.includes('--out')   ? args[args.indexOf('--out') + 1]    : null;
 
@@ -104,7 +105,12 @@ function printUsage() {
 }
 
 function hexToRgb(hex) {
-  const h = hex.replace('#', '');
+  let h = hex.replace(/^#/, '');
+  if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+  if (!/^[0-9a-fA-F]{6}$/.test(h)) {
+    console.error(`Invalid --bg hex color: "${hex}". Use a 3- or 6-digit hex value (e.g. fff or f0f0f0).`);
+    process.exit(1);
+  }
   return {
     r: parseInt(h.substring(0, 2), 16),
     g: parseInt(h.substring(2, 4), 16),
@@ -131,6 +137,8 @@ async function run() {
   }
 
   const outPath = outArg || buildOutputPath(imgPath, spec);
+  const outDir = path.dirname(outPath);
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   const { width: W, height: H } = spec;
 
   let pipeline = sharp(imgPath);

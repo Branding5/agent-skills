@@ -97,7 +97,7 @@ async function run() {
       const sizeStr  = `${r.width}×${r.height}`;
       const noteStr  = r.notes ? `  · ${r.notes}` : '';
       const resizeHint = r.level !== 'perfect'
-        ? `  → node scripts/resize.js ${path.basename(imgPath)} "${r.platform} ${r.name}"`
+        ? `  → node scripts/resize.js ${imgPath} "${r.platform} ${r.name}"`
         : '';
       console.log(`     ${r.platform.padEnd(12)} ${r.category.padEnd(20)} ${r.name.padEnd(28)} ${sizeStr.padEnd(12)} ${r.aspect}${noteStr}${resizeHint}`);
     }

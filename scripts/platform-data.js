@@ -97,7 +97,7 @@ const platforms = [
       { name: 'Ads', sizes: [
         { name: 'Sponsored Content', width: 1200, height: 627,  aspect: '1.91:1' },
         { name: 'Carousel Ad',       width: 1080, height: 1080, aspect: '1:1',    notes: '2–10 cards' },
-        { name: 'Spotlight Ad',      width: 100,  height: 100,  aspect: '1:1' }
+        { name: 'Spotlight Ad Logo', width: 100,  height: 100,  aspect: '1:1' }
       ]}
     ]
   },
@@ -123,7 +123,7 @@ const platforms = [
     categories: [
       { name: 'Channel Art', sizes: [
         { name: 'Profile Photo', width: 800,  height: 800,  aspect: '1:1',  notes: 'Displays as 98×98' },
-        { name: 'Banner',        width: 2560, height: 1440, aspect: '16:9', notes: 'Safe area: 1546×423 (center)' }
+        { name: 'Channel Banner', width: 2560, height: 1440, aspect: '16:9', notes: 'Safe area: 1546×423 (center)' }
       ]},
       { name: 'Videos', sizes: [
         { name: 'Video Upload (1080p)', width: 1920, height: 1080, aspect: '16:9' },

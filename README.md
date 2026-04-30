@@ -1,12 +1,6 @@
-# Branding5 Agent Skills
+# Social Media Image Sizes
 
-Free, open-source AI agent skills from [Branding5](https://www.branding5.com).
-
----
-
-## Skills
-
-### 📐 social-media-image-sizes
+Free, open-source AI agent skill from [Branding5](https://www.branding5.com).
 
 > Check and resize images for every major social media platform.
 
@@ -15,7 +9,7 @@ Validates image dimensions against 60+ specs across Instagram, Facebook, X (Twit
 **Install:**
 
 ```bash
-npx skills add Branding5/agent-skills@social-media-image-sizes
+npx skills add Branding5/social-media-image-sizes
 ```
 
 **Use when a user asks:**
@@ -60,37 +54,21 @@ node scripts/resize.js image.png "Instagram Profile Photo"
 
 ---
 
-## Structure
-
-Each skill lives in its own directory:
-
-```
-skills/
-└── <skill-name>/
-    ├── SKILL.md          # Frontmatter + agent instructions
-    ├── AGENTS.md         # Full compiled reference (single-file context)
-    ├── scripts/          # Executable tools
-    ├── references/       # Per-platform detail, loaded on demand
-    └── package.json      # Dependencies (if any)
-```
-
 ## Installation
 
-Install a single skill:
-
 ```bash
-npx skills add Branding5/agent-skills@social-media-image-sizes
+npx skills add Branding5/social-media-image-sizes
 ```
 
 Install globally so it's available in every project:
 
 ```bash
-npx skills add Branding5/agent-skills@social-media-image-sizes -g
+npx skills add Branding5/social-media-image-sizes -g
 ```
 
 ## Contributing
 
-Bug reports and pull requests welcome. If a platform updates its specs, open an issue or PR against the relevant file in `skills/social-media-image-sizes/references/` and `skills/social-media-image-sizes/scripts/platform-data.js`.
+Bug reports and pull requests welcome. If a platform updates its specs, open an issue or PR against the relevant file in `skills/social-media-image-sizes/references/` or `skills/social-media-image-sizes/scripts/platform-data.js`.
 
 ## License
 

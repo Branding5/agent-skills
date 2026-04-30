@@ -26,7 +26,7 @@ npx skills add Branding5/social-media-image-sizes
 node scripts/check.js image.png
 ```
 
-![check output](./skills/social-media-image-sizes/assets/check-output.png)
+![check output](./assets/check-output.png)
 
 **Resize to a named spec:**
 
@@ -34,7 +34,7 @@ node scripts/check.js image.png
 node scripts/resize.js image.png "Instagram Profile Photo"
 ```
 
-![resize output](./skills/social-media-image-sizes/assets/resize-output.png)
+![resize output](./assets/resize-output.png)
 
 **Platforms covered:**
 
@@ -50,7 +50,7 @@ node scripts/resize.js image.png "Instagram Profile Photo"
 | Snapchat    | Snaps, Spotlight, Stories, Ads, Filters/Lenses                           |
 | Threads     | Profile, Posts                                                           |
 
-→ [View skill](./skills/social-media-image-sizes/SKILL.md) · [Full reference](./skills/social-media-image-sizes/AGENTS.md) · [Interactive tool](https://www.branding5.com/tools/social-media-cheat-sheet)
+→ [View skill](./SKILL.md) · [Full reference](./AGENTS.md) · [Interactive tool](https://www.branding5.com/tools/social-media-cheat-sheet)
 
 ---
 
@@ -68,7 +68,7 @@ npx skills add Branding5/social-media-image-sizes -g
 
 ## Contributing
 
-Bug reports and pull requests welcome. If a platform updates its specs, open an issue or PR against the relevant file in `skills/social-media-image-sizes/references/` or `skills/social-media-image-sizes/scripts/platform-data.js`.
+Bug reports and pull requests welcome. If a platform updates its specs, open an issue or PR against the relevant file in `references/` or `scripts/platform-data.js`.
 
 ## License
 

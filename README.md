@@ -54,6 +54,10 @@ node scripts/resize.js image.png "Instagram Profile Photo"
 
 ---
 
+## Optional X/Twitter Planning Companion
+
+Hermes Agent users who plan X/Twitter campaigns before resizing assets can pair this skill with [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet). Use Hermes Tweet for X account context, search, monitoring, follower exports, and approval-gated drafts, then use this skill to validate and resize platform assets.
+
 ## Installation
 
 ```bash
